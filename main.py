@@ -1,6 +1,7 @@
 from graph import creer_graphe
 from search import dfs
 from maps_api import tracer_trajet
+from gui import Application
 from config import DEPART, ARRIVEE, ARRETS
 
 def main():
@@ -18,4 +19,5 @@ def main():
     tracer_trajet(DEPART, ARRIVEE, ARRETS)
 
 if __name__ == "__main__":
-    main()
+    app = Application()
+    app.mainloop()
